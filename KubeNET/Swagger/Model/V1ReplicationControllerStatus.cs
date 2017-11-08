@@ -28,6 +28,13 @@ namespace KubeNET.Swagger.Model {
     [DataMember(Name="fullyLabeledReplicas", EmitDefaultValue=false)]
     public int? FullyLabeledReplicas { get; set; }
 
+    /// <summary>
+    /// The number of ready replicas for this replication controller.
+    /// </summary>
+    /// <value>The number of ready replicas for this replication controller.</value>
+    [DataMember(Name="readyReplicas", EmitDefaultValue=false)]
+    public int? ReadyReplicas { get; set; }
+
     
     /// <summary>
     /// ObservedGeneration reflects the generation of the most recently observed replication controller.
