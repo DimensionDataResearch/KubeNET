@@ -35,6 +35,12 @@ namespace KubeNET.Swagger.Model {
     [DataMember(Name="readyReplicas", EmitDefaultValue=false)]
     public int? ReadyReplicas { get; set; }
 
+    /// <summary>
+    /// The number of available replicas for this replication controller.
+    /// </summary>
+    /// <value>The number of available replicas for this replication controller.</value>
+    [DataMember(Name="availableReplicas", EmitDefaultValue=false)]
+    public int? AvailableReplicas { get; set; }
     
     /// <summary>
     /// ObservedGeneration reflects the generation of the most recently observed replication controller.

@@ -20,7 +20,13 @@ namespace KubeNET.Swagger.Model {
     [DataMember(Name="replicas", EmitDefaultValue=false)]
     public int? Replicas { get; set; }
 
-    
+    /// <summary>
+    /// The minimum number of seconds a pod should be marked as Ready without crashing before it is considered Available.
+    /// </summary>
+    /// <value>The minimum number of seconds a pod should be marked as Ready without crashing before it is considered Available.</value>
+    [DataMember(Name="minReadySeconds", EmitDefaultValue=false)]
+    public int? MinReadySeconds { get; set; }
+
     /// <summary>
     /// Selector is a label query over pods that should match the Replicas count. If Selector is empty, it is defaulted to the labels present on the Pod template. Label keys and values that must match in order to be controlled by this replication controller, if empty defaulted to labels on Pod template. More info: http://releases.k8s.io/HEAD/docs/user-guide/labels.md#label-selectors
     /// </summary>
