@@ -35,8 +35,12 @@ namespace KubeNET.Swagger.Model {
     /// <value>Path within the container at which the volume should be mounted.  Must not contain ':'.</value>
     [DataMember(Name="mountPath", EmitDefaultValue=false)]
     public string MountPath { get; set; }
-
     
+    /// <summary>
+    ///     The volume sub-path (if any) to mount.
+    /// </summary>
+    [DataMember(Name = "subPath", EmitDefaultValue = false)]
+    public string SubPath { get; set; }
 
     /// <summary>
     /// Get the string presentation of the object
